@@ -81,6 +81,10 @@ This template is released as a free theme. Please check the license file include
 
 ---
 
+## WHMCS / HTML / WordPress / Drupal:
+If you want HTML / WordPress / Drupal version or WHMCS integration, please contact us.
+
+---
 ## Contact us:
 
 Please use below page to reach us in case you need any help.

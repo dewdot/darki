@@ -30,15 +30,15 @@ export const HostingServicesData = [
   {
     id: 5,
     name: 'Storage VPS',
-    info: 'Affordable Storage VPS with SSD caching to deliver faster file access and smooth performance.',
-    image: '/images/icons/managed-vps.svg',
+    info: 'Affordable Storage VPS with SSD caching and RAID-10 for faster performance.',
+    image: '/images/icons/storage-vps.svg',
     url: '/vps/storage-vps'
   },
   {
     id: 6,
     name: 'Dedicated Server',
     info: 'Robust dedicated server solutions delivering performance, security, and total control.',
-    image: '/images/icons/storage-vps.svg',
+    image: '/images/icons/dedicaed-server.svg',
     url: '/dedicated'
   }
 ];
