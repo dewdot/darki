@@ -2,6 +2,7 @@ import "@/css/base.css";
 import "@/css/globals.css";
 import "@/css/layout.css";
 import "@/css/header.css";
+import "@/css/hero.css";
 import "@/css/main.css";
 import "@/css/footer.css";
 import "@/css/shortcodes.css";

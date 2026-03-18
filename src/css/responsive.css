@@ -1,5 +1,5 @@
 /* mobile menu */
-@media (max-width: 767px){
+@media (max-width: 1023px){
   .main-nav {
     position: fixed;
     top: 0;
@@ -64,6 +64,20 @@
 
 /* Tablets — 768px and up */
 @media (min-width: 768px) {
+  /* Content width */
+  .width-3,
+  .width-4,
+  .width-5,
+  .width-6,
+  .width-7 {
+    width: 50%;
+  }
+  .faq-container .accordions .accordion-item {
+    flex: calc(40% - 1rem);
+  }
+}
+/* Small laptops — 1024px and up */
+@media (min-width: 1024px) {
   /* Responsive view */
   .view-mobile {
     display: none;
@@ -81,20 +95,16 @@
   .mobile-menu-close {
     display: none;
   }
-  /* Content width */
-  .width-3,
-  .width-4,
-  .width-5,
-  .width-6,
-  .width-7 {
-    width: 50%;
+  /* Hero slider */
+  .hero-container {
+    flex-direction: row;
   }
-  .faq-container .accordions .accordion-item {
-    flex: calc(40% - 1rem);
+  .hero-text {
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 1rem;
   }
-}
-/* Small laptops — 1024px and up */
-@media (min-width: 1024px) {
   .width-3 {
     width: 30%;
   }
