@@ -3,9 +3,6 @@
   min-height: 90vh;
    min-height: 90dvh;
 }
-.section-hero  {
-  background: linear-gradient(90deg, var(--color-dark) 0%, var(--color-dark2) 20%, var(--bg-body) 30%);
-}
 .hero-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

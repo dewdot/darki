@@ -20,7 +20,9 @@ Built on top of Next.js, the template provides excellent performance, fast page 
 ---
 
 ## Demo
+https://darki.vercel.app/
 
+## Template Details:
 https://dev5.dev/theme/nextjs/darki
 
 ---
@@ -31,21 +33,33 @@ https://dev5.dev/doc/darki
 
 ---
 
-## Getting Started
+## Installation - Getting Started
 
-Install dependencies:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/darki.git
+```
+
+### 2. Move into the project directory
+
+```bash
+cd darki
+```
+
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server:
+### 4. Start the development server
 
 ```bash
 npm run dev
 ```
 
-Open in your browser:
+### 5. Open in your browser:
 
 ```
 http://localhost:3000
@@ -64,3 +78,11 @@ Website: https://dev5.dev
 ## License
 
 This template is released as a free theme. Please check the license file included in the repository for usage terms.
+
+---
+
+## Contact us:
+
+Please use below page to reach us in case you need any help.
+
+https://dev5.dev/contact
