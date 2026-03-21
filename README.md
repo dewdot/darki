@@ -25,8 +25,6 @@ https://darki.vercel.app/
 ## Template Details:
 https://dev5.dev/theme/nextjs/darki
 
----
-
 ## Documentation
 
 https://dev5.dev/doc/darki

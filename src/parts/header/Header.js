@@ -24,7 +24,7 @@ export default function Header() {
               <Link className="header-button" href="#"><i className="icon-user"></i> Client Area</Link>
             </div>
             <div className="header-user-icon">
-              <Link className="header-user-button" href="#"><i className="icon-user"></i></Link>
+              <Link className="header-user-button" href="#" aria-label="Client Area"><i className="icon-user"></i><span className="screen-reader-text">Client Area</span></Link>
             </div>
           </div>
         </div>

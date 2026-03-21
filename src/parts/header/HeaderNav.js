@@ -15,17 +15,17 @@ export default function MainNav() {
   return (
     <div className="main-nav-container">
       <div className="view-mobile mobile-menu-button">
-        <div className={`mobile-menu-icon ${menuOpen ? "active-mobile-menu-icon" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <button className={`mobile-menu-icon ${menuOpen ? "active-mobile-menu-icon" : ""}`} aria-label={menuOpen ? "Close main menu" : "Open main menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
       </div>
-      <nav className={`main-nav ${menuOpen ? "active-mobile-menu" : ""}`}>
-        <div className="mobile-menu-close" onClick={() => setMenuOpen(!menuOpen)}>
-          <span></span>
-          <span></span>
-        </div>
+      <nav aria-label="Main navigation" className={`main-nav ${menuOpen ? "active-mobile-menu" : ""}`}>
+        <button aria-label="Close main menu" className="mobile-menu-close" onClick={() => setMenuOpen(!menuOpen)}>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
         <ul className="main-menu">
           {HeaderNav.map((item) => (
             <li
