@@ -1,4 +1,4 @@
-export const HeaderNav = [
+export const HeaderNavData = [
   {
     label: "Hosting",
     href: "/hosting",

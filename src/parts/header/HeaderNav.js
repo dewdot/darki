@@ -1,16 +1,11 @@
 "use client";
 
-import { HeaderNav } from "@/data/header/HeaderNav";
+import { HeaderNavData } from "@/data/header/HeaderNavData";
 import { useState } from "react";
 import Link from "next/link";
 
 export default function MainNav() {
-  const [openItem, setOpenItem] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleItem = (label) => {
-    setOpenItem(openItem === label ? null : label);
-  };
 
   return (
     <div className="main-nav-container">
@@ -22,12 +17,12 @@ export default function MainNav() {
         </button>
       </div>
       <nav aria-label="Main navigation" className={`main-nav ${menuOpen ? "active-mobile-menu" : ""}`}>
-        <button aria-label="Close main menu" className="mobile-menu-close" onClick={() => setMenuOpen(!menuOpen)}>
+        <button aria-label="Close main menu" className="mobile-menu-close" onClick={() => setMenuOpen(false)}>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </button>
         <ul className="main-menu">
-          {HeaderNav.map((item) => (
+          {HeaderNavData.map((item) => (
             <li
               key={item.label}
               className={`main-menu-item level-1 ${item.children ? "has-children" : ""}`}
@@ -36,10 +31,9 @@ export default function MainNav() {
                 <>
                   <Link
                     className="main-menu-link level-1-link"
-                    aria-expanded={openItem === item.label}
                     aria-haspopup="true"
-                    onClick={() => toggleItem(item.label)}
                     href={item.href}
+                    onClick={() => setMenuOpen(false)}
                   >
                     {item.label}
                   </Link>
@@ -47,7 +41,7 @@ export default function MainNav() {
                   <ul className="sub-menu">
                     {item.children.map((child) => (
                       <li key={child.label} className="sub-menu-item">
-                        <Link href={child.href} className="main-menu-link sub-menu-link">
+                        <Link href={child.href} className="main-menu-link sub-menu-link" onClick={() => setMenuOpen(false)}>
                           {child.label}
                         </Link>
                       </li>
@@ -55,7 +49,7 @@ export default function MainNav() {
                   </ul>
                 </>
               ) : (
-                <Link href={item.href} className="main-menu-link level-1-link">
+                <Link href={item.href} className="main-menu-link level-1-link" onClick={() => setMenuOpen(false)}>
                   {item.label}
                 </Link>
               )}
